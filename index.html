@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <title>News headline with weather</title>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;700&display=swap" rel="stylesheet">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div id="header">
+            <h2>
+                DSC SNU
+            </h2>
+            <div id="search-bar">
+                <i class="fa fa-search" id="searchIcon"></i>
+                <input type="text" placeholder="Search">
+            </div>
+            <div id="empty"></div>
+        </div>
+        <div id="content">
+            <aside>
+                <a class="menuLink top" href="#" onclick="topClicked()">Top Stories</a>
+                <a class="menuLink new" href="#" onclick="newClicked()">New Stories</a>
+                <a class="menuLink best" href="#" onclick="bestClicked()">Best Stories</a>
+            </aside>
+            <div id="newsList">
+                <h2>Headlines</h2>
+                <div id="topStoriesContainer">
+                    <!-- <a class="news-item" href="https://google.com" target="blank" data-title="Article Title">
+                        <h3 class="news-title">Article Title</h3>
+                        <p class="news-byline">Author</p>
+                        <p class="news-time">Time Now</p>
+                        <p class="news-score">
+                            <i class="fa fa-thumbs-up"></i>500
+                        </p>
+                    </a> -->
+                </div>
+            </div>
+            <div class="container">
+                <div class="app-title">
+                    <p>Weather</p>
+                </div>
+                <div class="notification"> </div>
+                <div class="weather-container">
+                    <div class="weather-icon">
+                        <img src="icons/unknown.png" alt="">
+                    </div>
+                    <div class="temperature-value">
+                        <p>- °<span>C</span></p>
+                    </div>
+                    <div class="temperature-description">
+                        <p> - </p>
+                    </div>
+                    <div class="location">
+                        <p>-</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="script.js" type="application/javascript"></script>
+    </body>
+</html>
